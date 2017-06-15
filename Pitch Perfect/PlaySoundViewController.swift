@@ -9,7 +9,20 @@
 import UIKit
 
 class PlaySoundViewController: UIViewController {
+    @IBOutlet weak var slowButton: UIButton!
+    @IBOutlet weak var fastButton: UIButton!
+    @IBOutlet weak var chipmunkButton: UIButton!
+    @IBOutlet weak var darthvaderButton: UIButton!
+    @IBOutlet weak var echoButton: UIButton!
+    @IBOutlet weak var reverbButton: UIButton!
 
+    @IBOutlet weak var firstRowStackView: UIStackView!
+    @IBOutlet weak var secondRowStackView: UIStackView!
+    @IBOutlet weak var thirdRowStackView: UIStackView!
+    
+    
+    var recordedAudioURL: NSURL!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

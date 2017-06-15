@@ -58,11 +58,11 @@
 			children = (
 				8A942E111EF218C9009CBF3A /* AppDelegate.swift */,
 				8A942E131EF218C9009CBF3A /* RecordViewController.swift */,
+				8A942E231EF21919009CBF3A /* PlaySoundViewController.swift */,
 				8A942E151EF218C9009CBF3A /* Main.storyboard */,
 				8A942E181EF218C9009CBF3A /* Assets.xcassets */,
 				8A942E1A1EF218C9009CBF3A /* LaunchScreen.storyboard */,
 				8A942E1D1EF218C9009CBF3A /* Info.plist */,
-				8A942E231EF21919009CBF3A /* PlaySoundViewController.swift */,
 			);
 			path = "Pitch Perfect";
 			sourceTree = "<group>";
