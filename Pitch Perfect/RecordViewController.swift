@@ -16,18 +16,23 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     
     var recording = false
-    let recordingText = "Recording!"
-    let recordText = "Tap the mic to record"
+    struct Messages {
+        static let recordingText = "Recording!"
+        static let recordText = "Tap the mic to record"
+    }
+    
     
     var audioRecorder: AVAudioRecorder!
     
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+        
         refreshViews()
     }
     
     // Update values on the two buttons and the status label
     func refreshViews() {
-        recordingStatusLabel.text = recording ? recordingText: recordText
+        recordingStatusLabel.text = recording ? Messages.recordingText: Messages.recordText
         
         self.stopButton.isEnabled = recording
         self.stopButton.isHidden = !recording
@@ -108,7 +113,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "stopRecording" {
-            let playSoundsVC = segue.destination as! PlaySoundViewController
+            let playSoundsVC = segue.destination as! PlaySoundsViewController
             
             let recordedAudioURL = sender as! NSURL
             playSoundsVC.recordedAudioURL = recordedAudioURL

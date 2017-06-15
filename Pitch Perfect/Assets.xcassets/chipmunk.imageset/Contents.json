@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "chipmunk2x-iphone-1.png",
+      "filename" : "chipmunkwhite-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "chipmunk2x-iphone.png",
+      "filename" : "chipmunkwhite-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "chipmunk2x-iphone-2.png",
+      "filename" : "chipmunkwhite.png",
       "scale" : "3x"
     }
   ],
